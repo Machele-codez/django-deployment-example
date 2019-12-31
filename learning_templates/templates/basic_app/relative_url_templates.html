@@ -1,0 +1,12 @@
+<!doctype html>
+{% extends 'basic_app/base.html' %}
+
+{% block body %}
+
+    <h1>Welcome to RELATIVE</h1>
+    <h2><em>{{ text|title }}</em></h2>
+    <h2><em>{{ number|add:22 }}</em></h2>
+    <h2><em>{{ text|cut:'Code' }}</em></h2>
+    {% comment %} <h2><em>{{ number|pos }}</em></h2> {% endcomment %}
+
+{% endblock %}
